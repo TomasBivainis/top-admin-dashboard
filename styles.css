@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar {
+  background-color: #0d9eff;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  color: white;
+  padding: 15px;
+}
+
+.tabs {
+  margin-top: 40px;
+}
+
+.tab {
+  margin: 0;
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.header {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr max(30%, 270px);
+  grid-template-rows: 50% 50%;
+}
+
+/* search bar */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 25px;
+}
+
+.search {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.search-bar img {
+  height: inherit;
+  width: auto;
+}
+
+.input {
+  height: 25px;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+/* user info */
+
+.user-info {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  gap: 25px;
+}
+
+.notifications {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.notifications img {
+  height: inherit;
+  width: auto;
+}
+
+.profile {
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  gap: 25px;
+}
+
+.profile img {
+  height: inherit;
+  width: auto;
+  border-radius: 100%;
+}
+
+.profile .text {
+  align-self: center;
+  justify-self: flex-end;
+}
+
+/* welcome message */
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  font-weight: bold;
+  gap: 15px;
+}
+
+.greeting {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.welcome-message .picture {
+  height: 100%;
+  width: auto;
+  border-radius: 100%;
+}
+
+/* buttons */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.buttons button {
+  background-color: #0d9eff;
+  border: none;
+  color: white;
+  width: 30%;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+/* content */
+
+.content {
+  background-color: #F0F0F0;
+}
